@@ -96,8 +96,9 @@ html {
 }
 /* home section styling */
 .home {
-  display: flex;
-  background: url("images/banner3.png") no-repeat center;
+  display: flex;  
+  /* background: rgb(65, 0, 64); */
+  background: linear-gradient(to right, rgb(65, 0, 64) , rgb(65, 0, 64, 0.7));
   height: 100vh;
   color: #fff;
   min-height: 500px;
@@ -106,6 +107,7 @@ html {
 .home .max-width {
   margin: auto 0 auto 40px;
 }
+
 .home .home-content .text-1 {
   font-size: 27px;
 }
@@ -193,16 +195,16 @@ section .title::after {
   content: "Who am I";
 }
 .about .about-content .left {
-  width: 45%;
+  width: 25%;
 }
 .about .about-content .left img {
-  height: 500px;
-  width: 400px;
+  width: 250px;
+  height: 350px;  
   object-fit: cover;
   border-radius: 6px;
 }
 .about .about-content .right {
-  width: 55%;
+  width: 75%;
 }
 .about .about-content .right .text {
   font-size: 25px;
@@ -383,6 +385,7 @@ skills .skills-content .right span {
 }
 .teams .title::after {
   background: rgb(65, 0, 64);
+  /* background: linear-gradient(to right, rgb(65, 0, 64) , rgb(65, 0, 64, 0.7)); */
   content: "Who with me";
 }
 .teams .carousel .card {
