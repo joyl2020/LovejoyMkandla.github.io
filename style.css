@@ -395,7 +395,7 @@ skills .skills-content .right span {
   background: #EED2EE;
 }
 .projects .title::before {
-  background: #fff;
+  background: #222;
 }
 
 .projects .title::after { 
