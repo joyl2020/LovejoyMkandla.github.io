@@ -146,6 +146,7 @@ section {
 .about,
 .services,
 .skills,
+.projects,
 .teams,
 .contact,
 footer {
@@ -154,6 +155,7 @@ footer {
 .about .about-content,
 .services .serv-content,
 .skills .skills-content,
+.projects .projects-content,
 .contact .contact-content {
   display: flex;
   flex-wrap: wrap;
@@ -234,11 +236,18 @@ section .title::after {
   background: none;
 }
 
+.about .about-content .right .request {
+  color: crimson;
+}
+
+
 /* Services Section Styling */
 .services,
+/* .projects, */
 .teams {
   color: #fff;
-  background: rgb(65, 0, 64);
+  /* background: rgb(65, 0, 64); */
+    background: linear-gradient(to right, rgb(65, 0, 64) , rgb(65, 0, 64, 0.7));
 }
 .services .title::before {
   background: #fff;
@@ -247,7 +256,8 @@ section .title::after {
   background: rgb(65, 0, 64);
   content: "What I Provide";
 }
-.services .serv-content .card {
+.services .serv-content .card
+ {
   width: calc(33% - 20px);
   background: #222;
   text-align: center;
@@ -379,13 +389,71 @@ skills .skills-content .right span {
   width: 60%;
 }
 
+
+/*Projects Section Styling*/
+.projects {
+  background: #EED2EE;
+}
+.projects .title::before {
+  background: #fff;
+}
+
+.projects .title::after { 
+  content: "What I have done";  
+}
+
+.projects .projects-content .card {
+  width: calc(33% - 20px);
+   background: linear-gradient(to bottom, rgb(65, 0, 64) , rgb(65, 0, 64, 0.7));
+   /* background: #222; */
+   text-align: center;
+   border-style: solid;   
+   border-radius: 6px;
+   padding: 5px 12px;
+   cursor: pointer;
+   transition: all 0.3s ease;
+   margin-bottom: 25px;
+ }
+ 
+ .projects .projects-content .card:hover {
+   background: crimson;
+   /* background: #fff; */
+ }
+ .projects .projects-content .card .box {
+   transition: all 0.3s ease;
+ }
+ .projects .projects-content .card:hover .box {
+   transform: scale(1.05);
+ }
+ .projects .projects-content .card img {
+   font-size: 50px;
+   color: crimson;
+   width: 100%;
+   height: 200px;
+   border-radius: 6px;
+   transition: color 0.3s ease;
+   
+ }
+ .projects .projects-content .card:hover i {
+   background: #fff;
+ }
+ .projects .projects-content .card .text {
+   font-size: 25px;
+   font-weight: 500;
+   color: #fff;
+   margin: 10px 0 7px 0;
+ }
+ .projects .projects-content .card p {
+   color: #fff;
+   margin-bottom: 25PX;
+ }
+
 /* teams section styling*/
 .teams .title::before {
   background: #fff;
 }
 .teams .title::after {
   background: rgb(65, 0, 64);
-  /* background: linear-gradient(to right, rgb(65, 0, 64) , rgb(65, 0, 64, 0.7)); */
   content: "Who with me";
 }
 .teams .carousel .card {
@@ -482,7 +550,7 @@ skills .skills-content .right span {
   color: crimson;
 }
 .contact .contact-content .info .head {
-  font-weight: 500;
+  font-weight: 500; 
 }
 .contact .contact-content .info .sub-title {
   color: #333;
@@ -491,7 +559,8 @@ skills .skills-content .right span {
   display: flex;
 }
 .contact .right form .field,
-.contact .right form .fields .field {
+.contact .right form .fields .field,
+select {
   height: 45px;
   width: 100%;
   margin-bottom: 15px;
@@ -506,7 +575,7 @@ skills .skills-content .right span {
 .contact .right form .email {
   margin-left: 10px;
 }
-.contact .right form .field input,
+.contact .right form .field input, select, option,
 .contact .right form .textarea textarea {
   height: 100%;
   width: 100%;
@@ -543,8 +612,8 @@ skills .skills-content .right span {
 }
 
 /* footer section styling*/
-footer {
-  background: rgb(65, 0, 64);
+footer { 
+  background: linear-gradient(to right, rgb(65, 0, 64) , rgb(65, 0, 64, 0.7));
   padding: 20px 23px;
   color: #fff;
 }
@@ -630,7 +699,8 @@ footer span a:hover {
   .about .about-content .right {
     flex: 100%;
   }
-  .services .serv-content .card {
+  .services .serv-content .card,
+  .projects .projects-content .card {
     width: calc(50% - 10px);
     margin-bottom: 20px;
   }
@@ -654,6 +724,9 @@ footer span a:hover {
     font-size: 20px;
   }
   .services .serv-content .card {
+    width: 100%;
+  }
+  .projects .projects-content .card {
     width: 100%;
   }
 }
