@@ -399,6 +399,7 @@ skills .skills-content .right span {
 }
 
 .projects .title::after { 
+  background: #EED2EE;
   content: "What I have done";  
 }
 
