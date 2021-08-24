@@ -47,7 +47,7 @@ $(document).ready(function(){
 
     //typing animation script
     var typed = new Typed(".typing", {
-        strings: ["Software Developer","Data Scientist","Front End Developer","Back End Developer",
+        strings: ["Software Developer","Freelancer","Data Scientist","Front End Developer","Back End Developer",
                     "Design Thinking Practitioner","FullStack Developer","IT Technician"],
         typeSpeed: 100,
         backSpeed: 60,
@@ -55,7 +55,7 @@ $(document).ready(function(){
         });
 
     var typed = new Typed(".typing02", {
-        strings: ["Software Developer","Data Scientist", "Front End Developer","Back End Developer",
+        strings: ["Software Developer","Freelancer","Data Scientist", "Front End Developer","Back End Developer",
                     "Design Thinking Practitioner","FullStack Developer","IT Technician"],
         typeSpeed: 100,
         backSpeed: 60,

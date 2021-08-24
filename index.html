@@ -11,7 +11,7 @@
         <script src="./jquery.js"></script>        
         <!-- <script src="./jquery.waypoints.min.js"></script>  -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/3.0.0/jquery.waypoints.min.js"></script>
-        <!-- <link rel="stylesheet" href="./Font-Awesome-master/css/all.min.css">  -->
+        <!-- <link rel="stylesheet" href="./fontawesome-free-5.15.4-web/css/all.min.css">  -->     
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
         <script src="./owl.carousel.min.js"></script>        
         <link rel="stylesheet" href="./owl.carousel.min.css">
@@ -58,6 +58,8 @@
         </div>
         </section>
 
+        <!-- Home section ends here -->
+
 <!-- About Section Starts Here -->
         <section class="about" id="about">
             <div class="max-width">
@@ -81,15 +83,17 @@
             </div>
         </div>
         </section>
+        <!-- About Section Starts Here -->
 
 <!-- Services Section Starts Here -->
         <section class="services" id="services">
             <div class="max-width">
                 <h2 class="title">My Services</h2>
             <div class="serv-content">
-            <div class="card">
+            <!-- <div class="card">
                 <div class="box">
                     <i class="fas fa-code"></i>
+              
                     <div class="text">Software Development</div>
                     <p>I develop Enterprise Software solutions for small and large businesses. 
                     I love solving problems. </p>
@@ -108,31 +112,144 @@
                 <div class="box">
                     <i class="fas fa-paint-brush"></i>
                     <div class="text">IT Technician</div>
-                    <p>I assist with IT Support, Desktop Support, Network Support and Infrastructure Support.</p>
+                    <p>I assist with IT Support, Desktop Support, Network Support 
+                        and Infrastructure Support.</p>
+                </div>
+            </div>  -->
+
+            <!-- FLIP Card Starts Here -->
+
+            <div class="flip-card">
+                <div class="flip-card-inner">
+
+                    <div class="flip-card-front">                                         
+                    <!-- <img src="img_avatar.png" alt="Avatar" style="width:300px;height:300px;"> -->
+                        <i class="fas fa-code"></i>
+                        <h1>Software Development</h1>                                                                
+                        <button>                           
+                           See More 
+                            <i class="far fa-arrow-alt-circle-right"></i>       
+                        </button>                        
+                    </div>
+                    
+                    <div class="flip-card-back">
+                        <header>
+                            <i class="fas fa-code"></i>  
+                            <h1>Software Development</h1> 
+                        </header>                           
+                            <p>I develop Enterprise Software solutions for small, medium 
+                                and large businesses. <br>I love solving problems.</p>
+                                
+                        <a href="#contact" class="readmore" id="readmore">
+                            <button >
+                                Request a Service...
+                            </button>
+                        </a>
+                        
+                    </div>
+                </div>
+            </div>
+
+            <div class="flip-card">
+                <div class="flip-card-inner">
+
+                    <div class="flip-card-front">                                         
+                    <!-- <img src="img_avatar.png" alt="Avatar" style="width:300px;height:300px;"> -->
+                    <i class="fas fa-globe"></i>
+                        <h1>WebSite Development</h1>                                                                
+                        <button>                           
+                           See More 
+                            <i class="far fa-arrow-alt-circle-right"></i>       
+                        </button>                        
+                    </div>
+                    
+                    <div class="flip-card-back">
+                        <header>
+                            <i class="fas fa-globe"></i> 
+                            <h1>WebSite Development</h1> 
+                        </header>                        
+                                             
+                        <p>I develop Websites and Web Applications using modern Web 
+                            Development frameworks and tools.</p>
+
+                            <a href="#contact" class="readmore" id="readmore">
+                                <button >
+                                    Request a Service...
+                                </button>
+                            </a>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="flip-card">
+                <div class="flip-card-inner">
+
+                    <div class="flip-card-front">                                         
+                    <!-- <img src="img_avatar.png" alt="Avatar" style="width:300px;height:300px;"> -->
+                    <i class="fas fa-database"></i>
+                        <h1>Data Analysis</h1>                                                                
+                        <button>                           
+                           See More 
+                            <i class="far fa-arrow-alt-circle-right"></i>       
+                        </button>                        
+                    </div>
+                    
+                    <div class="flip-card-back">
+                        <header>
+                            <i class="fas fa-database"></i> 
+                            <h1>Data Analysis  </h1> 
+                        </header>                        
+                                             
+                        <p>I assist with Data Analytics using python and the 
+                            tools to make data meaningful to the business.</p>
+
+                            <a href="#contact" class="readmore" id="readmore">
+                                <button >
+                                    Request a Service...
+                                </button>
+                            </a>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="flip-card">
+                <div class="flip-card-inner">
+
+                    <div class="flip-card-front">                                         
+                    <!-- <img src="img_avatar.png" alt="Avatar" style="width:300px;height:300px;"> -->
+                    <i class="fa fa-server" aria-hidden="true"></i>
+                    <h1>IT Support Engineer</h1>                                                                 
+                        <button>                           
+                           See More 
+                            <i class="far fa-arrow-alt-circle-right"></i>       
+                        </button>                        
+                    </div>
+                    
+                    <div class="flip-card-back">
+                        <header>
+                            <i class="fa fa-server" aria-hidden="true"></i>
+                            <h1>IT Support Engineer</h1>  
+                        </header>                        
+                                             
+                        <p>I assist with IT Support, Desktop Support, Network Support 
+                            and Infrastructure Support.</p>
+
+                        <a href="#contact" class="readmore" id="readmore">
+                            <button >
+                                Request a Service...
+                            </button>
+                        </a>
+
+
+                    </div>
                 </div>
             </div> 
-            <!--<div class="card">
-                <div class="box">
-                    <i class="fas fa-code"></i>
-                    <div class="text">Full Stack Development</div>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident et placeat corporis dolores alias asperiores!</p>
-                </div> 
-            </div> 
-            <div class="card">
-                <div class="box">
-                    <i class="fas fa-chart-line"></i>
-                    <div class="text">Unknown</div>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident et placeat corporis dolores alias asperiores!</p>
-                </div>
-            </div>      
-            
-            <div class="card">
-                <div class="box">
-                    <i class="fas fa-paint-brush"></i>
-                    <div class="text">IT Technician</div>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident et placeat corporis dolores alias asperiores!</p>
-                </div>
-            </div> -->
+
+           
+
+            <!-- FLIP Card Ends Here -->            
         </div>
         </div>
         </section>
@@ -394,17 +511,26 @@
                                 <i class="fas fa-map-marker-alt"></i>   
                                 <div class="info">
                                     <div class="head">Address</div>
-                                        <div class="sub-title">Johannesburg, South Africa</div>                                     
+                                        <div class="sub-title">Johannesburg, South Africa, 2090</div>                                     
                                 </div>
                            </div>
 
                            <div class="row">
-                            <i class="fa fa-envelope"></i>   
-                            <div class="info">
-                                <div class="head">Email</div>
-                                    <div class="sub-title">lvjymkandla@yahoo.com</div>                                     
+                                <i class="fa fa-envelope"></i>   
+                                    <div class="info">
+                                        <div class="head">Email</div>
+                                        <div class="sub-title">lvjymkandla@yahoo.com</div>                                     
+                                    </div>
                             </div>
-                       </div>
+
+                            <div class="row">
+                                <i class="fas fa-phone"></i>  
+                                    <div class="info">
+                                        <div class="head">Phone</div>
+                                        <div class="sub-title">+27 82 094 4721</div>                                     
+                                    </div>
+                            </div>
+
                         </div>
                     </div>
                     <div class="column right">
@@ -419,9 +545,13 @@
                                     <input type="email" placeholder="Email" name="email" required>
                                 </div>
                             </div>
-                                <div class="field" name="Company">
-                                    <input type="text" placeholder="Company" name="Company" required>
-                                </div>
+                            <div class="field Phone" name="Phone">
+                                <input type="text" placeholder="Phone" name="phone" required>
+                            </div>
+
+                            <div class="field Company" name="Company">
+                                <input type="text" placeholder="Company" name="company" required>
+                            </div>
 
                                 <div>
                                     <!-- <input type="select" placeholder="subject" required>   -->

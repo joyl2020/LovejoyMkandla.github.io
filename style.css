@@ -520,12 +520,14 @@ skills .skills-content .right span {
   content: "Get in Touch";
 }
 .contact .contact-content .column {
-  width: calc(50% - 30px);
+  width: calc(50% - 30px);     
 }
 .contact .contact-content .left .text {
   font-size: 20px;
-  font-weight: 600;
-  margin-bottom: 10px;
+  font-weight: 600;            
+}
+.contact .contact-content .left {
+  margin-top: -100px;
 }
 .contact .contact-content .left p {
   text-align: justify;
@@ -536,6 +538,7 @@ skills .skills-content .right span {
 .contact .contact-content .right {
   font-size: 20px;
   font-weight: 600;
+  margin-top: 20px;
   margin-bottom: 10px;
 }
 .contact .contact-content .row {
@@ -568,14 +571,24 @@ select {
 }
 .contact .right form .textarea {
   height: 80px;
-  width: 100%;
+  width: 100%; 
 }
-.contact .right form .name {
+.contact .right form .name,
+.contact .right form .email,
+.contact .right form .phone,
+.contact .right form .company
+{
   margin-right: 10px;
 }
-.contact .right form .email {
-  margin-left: 10px;
+/* .contact .right form .email {
+  margin-left: 10px;  
+} */
+/* .contact .right form .Phone {
+  margin-left: 10px;  
 }
+.contact .right form .company {
+  margin-left: 10px;  
+} */
 .contact .right form .field input, select, option,
 .contact .right form .textarea textarea {
   height: 100%;
@@ -586,10 +599,12 @@ select {
   padding: 0 15px;
   font-size: 17px;
   font-family: "Poppins", sans-serif;
+ 
 }
 .contact .right form .textarea textarea {
   padding-top: 10px;
   resize: none;
+  
 }
 .contact .right form .button {
   height: 47px;
@@ -700,7 +715,31 @@ footer span a:hover {
   .about .about-content .right {
     flex: 100%;
   }
-  .services .serv-content .card,
+  .services .serv-content .flip-card{
+    width: calc(50% - 10px);
+    margin-bottom: 20px;    
+  }
+  .services .serv-content .flip-card i{
+    color: green;    
+    font-size: 30px;
+  }
+  .services .serv-content .flip-card .flip-card-front h1{
+      font-size: 25px;
+      margin-top: 10px;
+  }
+
+  .services .serv-content .flip-card .flip-card-back a,
+  .services .serv-content .flip-card .flip-card-back .button
+   {
+    font-size: 14px;
+    margin-top: 10px;    
+  }
+
+  .services .serv-content .flip-card .flip-card-back header {
+    margin-top: 10px;
+  }
+
+  
   .projects .projects-content .card {
     width: calc(50% - 10px);
     margin-bottom: 20px;
@@ -724,9 +763,11 @@ footer span a:hover {
   .home .home-content a {
     font-size: 20px;
   }
-  .services .serv-content .card {
+  .services .serv-content .flip-card {
     width: 100%;
   }
+
+
   .projects .projects-content .card {
     width: 100%;
   }
@@ -739,3 +780,124 @@ footer span a:hover {
     font-size: 27px;
   }
 }
+
+/* Flip Card Styling Starts */
+.flip-card {
+  background-color: transparent;
+  /* width: 22.5rem; */
+  width: calc(33% - 20px);
+  height: 280px;
+  perspective: 1000px; 
+  margin-bottom: 30px;    
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);  
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);  
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute; 
+  background-color: #222;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;  
+  border-radius: 5px;
+  
+}
+
+.flip-card-front { 
+  color: #222;
+  text-align: center;
+  background-color: #EED2EE;  
+}
+
+.flip-card-front h1 {
+  margin: 30px auto;
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.flip-card-front button{
+  background-color: inherit;
+  color: crimson;
+  font-size: 20px;
+  margin: 10px;
+  font-weight: 600;
+  border: none;
+  }
+
+.flip-card-front i {
+  margin-top: 15px ;
+  margin-bottom: 25px;
+  color: crimson;
+  font-size: 60px;
+}
+
+.flip-card-front .fa-arrow-alt-circle-right{
+  font-size: 20px;
+}
+
+.flip-card-back {  
+  color: white; 
+  transform: rotateY(180deg);   
+}
+
+.flip-card-back header {  
+  display: flex;
+  margin: 50px 10px;  
+  margin-bottom: 20px; 
+}
+
+.flip-card-back header h1 { 
+ margin-left: 10px;
+  font-weight: 500;
+}
+
+.flip-card-back i {
+  /* margin: 2px auto; */
+  color: orange;
+  font-size: 30px;  
+}
+
+.flip-card-back p {
+  padding: 5px;  
+}
+
+.flip-card-back a,
+.flip-card-back button{
+  background-color: crimson;
+  padding: 15px;
+  border: 1px solid crimson;
+  border-radius: 5px;
+  /* font-size: 18px; */
+  font-weight: 500;
+  color: white;
+  margin-top: 15px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.flip-card-back a:hover,
+.flip-card-back button:hover {
+  background-color: #EED2EE;
+  color: #222;  
+  border: none;
+}
+
+
+
+
+/* Flip Card Styling Ends */
